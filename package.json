@@ -1,0 +1,19 @@
+{
+  "name": "Protractorproj",
+  "version": "1.0.0",
+  "description": "",
+  "main": "shopregistrationpage.js",
+  "dependencies": {
+    "protractor": "^5.4.2",
+    "jasmine-data-provider": "^2.2.0",
+    "protractor-jasmine2-html-reporter": "^0.0.7"
+  },
+  "scripts": {
+    "webdriver-update": "./node_modules/.bin/webdriver-manager update",
+    "webdriver-start": "./node_modules/.bin/webdriver-manager start",
+    "protractor": "./node_modules/.bin/protractor config/configuration.js",
+    "smokesuite": "./node_modules/.bin/protractor config/configuration.js --suite smoke",
+    "regressionsuite": "./node_modules/.bin/protractor config/configuration.js --suite regression",
+    "start": "npm run webdriver-update &&npm run webdriver-start"
+  }
+}
